@@ -1,0 +1,37 @@
+/* Button Position Adjustments */
+
+/* Hero Slider Controls */
+.slider-controls {
+    padding: 0 30px; /* Standard padding for the container */
+}
+
+.next-slide {
+    margin-left: 0; /* Reset margin */
+    position: relative;
+    right: 50px; /* Shift to the right by exactly 40px */
+}
+
+/* Testimonials Controls */
+.testimonials-controls {
+    position: relative;
+}
+
+.next-testimonial {
+    margin-left: 0; /* Reset margin */
+    position: relative;
+    right: -20px; /* Shift to the right by a smaller amount */
+}
+
+/* Ensure buttons are properly centered in their containers */
+.prev-slide, .next-slide, .prev-testimonial, .next-testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure the chevron icons are centered in the buttons */
+.fa-chevron-left, .fa-chevron-right {
+    display: block;
+    text-align: center;
+    width: 100%;
+}

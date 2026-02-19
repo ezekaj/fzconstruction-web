@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact FZ Construction for inquiries about our real estate projects in Tirana, Albania.">
+    <meta name="keywords" content="FZ Construction, contact, real estate, construction company, Tirana, Albania">
+    <title>Contact Us - FZ Construction</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <a href="tel:+35568206202" class="phone"><i class="fas fa-phone"></i> +355 68 2066 202</a>
+                    <a href="mailto:info@fz-construction.com" class="email"><i class="fas fa-envelope"></i> info@fz-construction.com</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/FzConstruction/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/fzconstruction/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="FZ Construction Logo" class="logo-img fade-in">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">HOME</a></li>
+                        <li><a href="about.html" class="nav-link">ABOUT US</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">FOR SALE <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="green-terrace.html">GREEN TERRACE COMPLEX</a></li>
+                                <li><a href="corner-building.html">CORNER BUILDING</a></li>
+                                <li><a href="forest-villas.html">FOREST VILLAS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="rent.html" class="nav-link">FOR RENT</a></li>
+                        <li><a href="search.html" class="nav-link">PROPERTY SEARCH</a></li>
+                        <li><a href="videos.html" class="nav-link">VIDEOS</a></li>
+                        <li class="dropdown">
+                            <a href="gallery.html" class="nav-link">GALLERY <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="project-gallery.html">PROJECT GALLERY</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" class="nav-link active">CONTACT</a></li>
+                        <li><a href="#" class="nav-link agent-login">AGENT PORTAL</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in">Contact Us</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <span>Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-page-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-container fade-in">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="contact-intro">
+                        We'd love to hear from you. Please fill out the form below and we'll get back to you as soon as possible.
+                    </p>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="general">General Inquiry</option>
+                                    <option value="property">Property Information</option>
+                                    <option value="sales">Sales</option>
+                                    <option value="support">Support</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">I agree to the <a href="#">privacy policy</a></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info-container fade-in">
+                    <h2 class="section-title">Contact Information</h2>
+                    <div class="contact-info-items">
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Address</h3>
+                                <p>Rr. Hamdi Sina, near Liqeni i Thate, Administrative Unit Farke, Tirana</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+35568206202">+355 68 2066 202</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@fz-construction.com">info@fz-construction.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Working Hours</h3>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                <p>Saturday: 10:00 AM - 2:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/FzConstruction/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/fzconstruction/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div id="contactMap"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title">ABOUT US</h3>
+                    <p>
+                        "FZ Construction" company was established as a limited liability company in Tirana, and operates in the field of construction.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">PROJECTS</h3>
+                    <ul class="footer-links">
+                        <li><a href="green-terrace.html">Residential and Service Buildings</a></li>
+                        <li><a href="forest-villas.html">Villa Complexes</a></li>
+                        <li><a href="#">Infrastructure</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">LOCATION</h3>
+                    <p>
+                        Rr. Hamdi Sina, near Liqeni i Thate, Administrative Unit Farke, Tirana
+                    </p>
+                    <p>
+                        <a href="tel:+35568206202">+355 68 2066 202</a>
+                    </p>
+                    <p>
+                        <a href="mailto:info@fz-construction.com">info@fz-construction.com</a>
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">SOCIAL NETWORKS</h3>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/FzConstruction/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/fzconstruction/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 FZ Construction. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Agent Portal Modal -->
+    <div class="modal" id="agentPortal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Agent Portal</h2>
+            <form id="agentLoginForm">
+                <div class="form-group">
+                    <label for="agentEmail">Email</label>
+                    <input type="email" id="agentEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="agentPassword">Password</label>
+                    <input type="password" id="agentPassword" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Message Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="success-message">
+                <i class="fas fa-check-circle"></i>
+                <h2>Message Sent!</h2>
+                <p>Thank you for contacting us. We will get back to you as soon as possible.</p>
+                <button class="btn btn-primary close-success-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/agent-portal.js"></script>
+    <script src="js/cms-loader.js"></script>
+    <!-- Leaflet Map JS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="js/contact-map.js"></script>
+    <script src="js/contact-form.js"></script>
+</body>
+</html>

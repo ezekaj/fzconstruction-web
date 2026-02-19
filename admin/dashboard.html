@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FZ Construction - Admin Dashboard</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="admin-sidebar">
+            <div class="admin-logo">
+                <img src="../images/logo.png" alt="FZ Construction Logo">
+                <h1>FZ Construction</h1>
+            </div>
+            <nav class="admin-nav">
+                <ul>
+                    <li class="active"><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="content-home.html"><i class="fas fa-home"></i> Home Page</a></li>
+                    <li><a href="content-about.html"><i class="fas fa-info-circle"></i> About Page</a></li>
+                    <li><a href="content-projects.html"><i class="fas fa-building"></i> Projects</a></li>
+                    <li><a href="content-contact.html"><i class="fas fa-envelope"></i> Contact Page</a></li>
+                    <li><a href="navigation.html"><i class="fas fa-bars"></i> Navigation</a></li>
+                    <li><a href="footer.html"><i class="fas fa-shoe-prints"></i> Footer</a></li>
+                    <li><a href="image-upload.html"><i class="fas fa-images"></i> Image Upload</a></li>
+                    <li><a href="site-settings.html"><i class="fas fa-cog"></i> Site Settings</a></li>
+                    <li><a href="users.html"><i class="fas fa-users"></i> Users</a></li>
+                </ul>
+            </nav>
+            <div class="admin-sidebar-footer">
+                <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                <a href="../index.html" target="_blank"><i class="fas fa-external-link-alt"></i> View Site</a>
+            </div>
+        </aside>
+        <main class="admin-main">
+            <header class="admin-header">
+                <div class="admin-header-title">
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="admin-user">
+                    <span class="admin-username">Admin User</span>
+                    <img src="https://via.placeholder.com/40" alt="Admin User" class="admin-avatar">
+                </div>
+            </header>
+            <div class="admin-content">
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>3</h3>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>12</h3>
+                            <p>Images</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>5</h3>
+                            <p>Pages</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>2</h3>
+                            <p>Users</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-sections">
+                    <div class="dashboard-section">
+                        <h3>Recent Updates</h3>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-edit"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <p>Home page content updated</p>
+                                    <span class="activity-time">Today, 10:30 AM</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <p>New project added: "Green Terrace Complex"</p>
+                                    <span class="activity-time">Yesterday, 3:45 PM</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-image"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <p>New images uploaded to gallery</p>
+                                    <span class="activity-time">May 5, 2023, 11:20 AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-section">
+                        <h3>Quick Actions</h3>
+                        <div class="quick-actions">
+                            <a href="content-home.html" class="quick-action-btn">
+                                <i class="fas fa-edit"></i>
+                                <span>Edit Home Page</span>
+                            </a>
+                            <a href="content-projects.html" class="quick-action-btn">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>Add New Project</span>
+                            </a>
+                            <a href="image-upload.html" class="quick-action-btn">
+                                <i class="fas fa-upload"></i>
+                                <span>Upload Images</span>
+                            </a>
+                            <a href="backup.html" class="quick-action-btn">
+                                <i class="fas fa-download"></i>
+                                <span>Backup Content</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

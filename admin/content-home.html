@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FZ Construction - Edit Home Page</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="admin-sidebar">
+            <div class="admin-logo">
+                <img src="../images/logo.png" alt="FZ Construction Logo">
+                <h1>FZ Construction</h1>
+            </div>
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li class="active"><a href="content-home.html"><i class="fas fa-home"></i> Home Page</a></li>
+                    <li><a href="content-about.html"><i class="fas fa-info-circle"></i> About Page</a></li>
+                    <li><a href="content-projects.html"><i class="fas fa-building"></i> Projects</a></li>
+                    <li><a href="content-contact.html"><i class="fas fa-envelope"></i> Contact Page</a></li>
+                    <li><a href="navigation.html"><i class="fas fa-bars"></i> Navigation</a></li>
+                    <li><a href="footer.html"><i class="fas fa-shoe-prints"></i> Footer</a></li>
+                    <li><a href="site-settings.html"><i class="fas fa-cog"></i> Site Settings</a></li>
+                    <li><a href="users.html"><i class="fas fa-users"></i> Users</a></li>
+                </ul>
+            </nav>
+            <div class="admin-sidebar-footer">
+                <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                <a href="../index.html" target="_blank"><i class="fas fa-external-link-alt"></i> View Site</a>
+            </div>
+        </aside>
+        <main class="admin-main">
+            <header class="admin-header">
+                <div class="admin-header-title">
+                    <h2>Edit Home Page</h2>
+                </div>
+                <div class="admin-user">
+                    <span class="admin-username">Admin User</span>
+                    <img src="https://via.placeholder.com/40" alt="Admin User" class="admin-avatar">
+                </div>
+            </header>
+            <div class="admin-content">
+                <div class="content-nav">
+                    <ul class="tab-nav">
+                        <li class="active" data-tab="slider">Slider</li>
+                        <li data-tab="about">About Section</li>
+                        <li data-tab="features">Features</li>
+                        <li data-tab="projects">Projects</li>
+                        <li data-tab="values">Values</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content">
+                    <!-- Slider Tab -->
+                    <div class="tab-pane active" id="slider">
+                        <div class="section-header">
+                            <h3>Hero Slider</h3>
+                            <button class="btn btn-sm btn-primary" id="addSlideBtn">
+                                <i class="fas fa-plus"></i> Add Slide
+                            </button>
+                        </div>
+                        
+                        <div class="slides-container" id="slidesContainer">
+                            <!-- Slide items will be loaded here dynamically -->
+                            <div class="slide-item">
+                                <div class="slide-header">
+                                    <h4>Slide 1</h4>
+                                    <div class="slide-actions">
+                                        <button class="btn btn-sm btn-icon move-up-btn"><i class="fas fa-arrow-up"></i></button>
+                                        <button class="btn btn-sm btn-icon move-down-btn"><i class="fas fa-arrow-down"></i></button>
+                                        <button class="btn btn-sm btn-icon delete-btn"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                <div class="slide-content">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="slide1-title">Title</label>
+                                            <input type="text" id="slide1-title" name="slide1-title" value="COMPLEX">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="slide1-subtitle">Subtitle</label>
+                                            <input type="text" id="slide1-subtitle" name="slide1-subtitle" value="&quot;GREEN TERRACE&quot;">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="slide1-link">Link</label>
+                                            <input type="text" id="slide1-link" name="slide1-link" value="green-terrace.html">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="slide1-button">Button Text</label>
+                                            <input type="text" id="slide1-button" name="slide1-button" value="VISIT">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="slide1-image">Image</label>
+                                        <div class="image-upload-container">
+                                            <div class="image-preview">
+                                                <img src="../images/slide1.jpg" alt="Slide 1">
+                                            </div>
+                                            <div class="image-upload-controls">
+                                                <input type="file" id="slide1-image" name="slide1-image" accept="image/*">
+                                                <button class="btn btn-sm btn-secondary">Choose Image</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="slide-item">
+                                <div class="slide-header">
+                                    <h4>Slide 2</h4>
+                                    <div class="slide-actions">
+                                        <button class="btn btn-sm btn-icon move-up-btn"><i class="fas fa-arrow-up"></i></button>
+                                        <button class="btn btn-sm btn-icon move-down-btn"><i class="fas fa-arrow-down"></i></button>
+                                        <button class="btn btn-sm btn-icon delete-btn"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                <div class="slide-content">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="slide2-title">Title</label>
+                                            <input type="text" id="slide2-title" name="slide2-title" value="VILLAS">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="slide2-subtitle">Subtitle</label>
+                                            <input type="text" id="slide2-subtitle" name="slide2-subtitle" value="&quot;FOREST&quot;">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="slide2-link">Link</label>
+                                            <input type="text" id="slide2-link" name="slide2-link" value="forest-villas.html">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="slide2-button">Button Text</label>
+                                            <input type="text" id="slide2-button" name="slide2-button" value="VISIT">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="slide2-image">Image</label>
+                                        <div class="image-upload-container">
+                                            <div class="image-preview">
+                                                <img src="../images/slide2.jpg" alt="Slide 2">
+                                            </div>
+                                            <div class="image-upload-controls">
+                                                <input type="file" id="slide2-image" name="slide2-image" accept="image/*">
+                                                <button class="btn btn-sm btn-secondary">Choose Image</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button class="btn btn-primary" id="saveSliderBtn">Save Changes</button>
+                            <button class="btn btn-secondary" id="cancelSliderBtn">Cancel</button>
+                        </div>
+                    </div>
+                    
+                    <!-- About Section Tab -->
+                    <div class="tab-pane" id="about">
+                        <div class="section-header">
+                            <h3>About Section</h3>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="about-title">Title</label>
+                            <input type="text" id="about-title" name="about-title" value="&quot;FZ Construction&quot; Company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="about-subtitle">Subtitle</label>
+                            <input type="text" id="about-subtitle" name="about-subtitle" value="ABOUT US">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="about-description">Description</label>
+                            <textarea id="about-description" name="about-description" rows="4">"FZ Construction" company was established as a limited liability company in Tirana, and operates in the field of construction, focused on three main directions:</textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Points</label>
+                            <div class="repeater-container" id="aboutPointsContainer">
+                                <div class="repeater-item">
+                                    <input type="text" name="about-point-1" value="Residential and service buildings">
+                                    <button class="btn btn-sm btn-icon delete-btn"><i class="fas fa-times"></i></button>
+                                </div>
+                                <div class="repeater-item">
+                                    <input type="text" name="about-point-2" value="Villa Complexes">
+                                    <button class="btn btn-sm btn-icon delete-btn"><i class="fas fa-times"></i></button>
+                                </div>
+                                <div class="repeater-item">
+                                    <input type="text" name="about-point-3" value="Infrastructure">
+                                    <button class="btn btn-sm btn-icon delete-btn"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                            <button class="btn btn-sm btn-secondary" id="addAboutPointBtn">
+                                <i class="fas fa-plus"></i> Add Point
+                            </button>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="about-image">Image</label>
+                            <div class="image-upload-container">
+                                <div class="image-preview">
+                                    <img src="../images/about-image.jpg" alt="About Image">
+                                </div>
+                                <div class="image-upload-controls">
+                                    <input type="file" id="about-image" name="about-image" accept="image/*">
+                                    <button class="btn btn-sm btn-secondary">Choose Image</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="about-button-text">Button Text</label>
+                                <input type="text" id="about-button-text" name="about-button-text" value="Learn More">
+                            </div>
+                            <div class="form-group">
+                                <label for="about-button-link">Button Link</label>
+                                <input type="text" id="about-button-link" name="about-button-link" value="about.html">
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button class="btn btn-primary" id="saveAboutBtn">Save Changes</button>
+                            <button class="btn btn-secondary" id="cancelAboutBtn">Cancel</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Features Tab -->
+                    <div class="tab-pane" id="features">
+                        <div class="section-header">
+                            <h3>Features Section</h3>
+                            <button class="btn btn-sm btn-primary" id="addFeatureBtn">
+                                <i class="fas fa-plus"></i> Add Feature
+                            </button>
+                        </div>
+                        
+                        <div class="features-container" id="featuresContainer">
+                            <!-- Feature items will be loaded here dynamically -->
+                            <div class="feature-item">
+                                <div class="feature-header">
+                                    <h4>Feature 1</h4>
+                                    <div class="feature-actions">
+                                        <button class="btn btn-sm btn-icon move-up-btn"><i class="fas fa-arrow-up"></i></button>
+                                        <button class="btn btn-sm btn-icon move-down-btn"><i class="fas fa-arrow-down"></i></button>
+                                        <button class="btn btn-sm btn-icon delete-btn"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                <div class="feature-content">
+                                    <div class="form-group">
+                                        <label for="feature1-title">Title</label>
+                                        <input type="text" id="feature1-title" name="feature1-title" value="Collaboration">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="feature1-description">Description</label>
+                                        <textarea id="feature1-description" name="feature1-description" rows="2">Close collaboration with clients to fulfill their every requirement</textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="feature1-icon">Icon</label>
+                                        <div class="image-upload-container">
+                                            <div class="image-preview">
+                                                <img src="../images/collaboration-icon.png" alt="Feature 1 Icon">
+                                            </div>
+                                            <div class="image-upload-controls">
+                                                <input type="file" id="feature1-icon" name="feature1-icon" accept="image/*">
+                                                <button class="btn btn-sm btn-secondary">Choose Icon</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button class="btn btn-primary" id="saveFeaturesBtn">Save Changes</button>
+                            <button class="btn btn-secondary" id="cancelFeaturesBtn">Cancel</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Projects Tab -->
+                    <div class="tab-pane" id="projects">
+                        <div class="section-header">
+                            <h3>Projects Section</h3>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="projects-title">Title</label>
+                                <input type="text" id="projects-title" name="projects-title" value="Our Projects">
+                            </div>
+                            <div class="form-group">
+                                <label for="projects-subtitle">Subtitle</label>
+                                <input type="text" id="projects-subtitle" name="projects-subtitle" value="FZ CONSTRUCTION">
+                            </div>
+                        </div>
+                        
+                        <div class="section-subheader">
+                            <h4>Featured Projects</h4>
+                            <button class="btn btn-sm btn-primary" id="addProjectBtn">
+                                <i class="fas fa-plus"></i> Add Project
+                            </button>
+                        </div>
+                        
+                        <div class="projects-container" id="projectsContainer">
+                            <!-- Project items will be loaded here dynamically -->
+                            <div class="project-item">
+                                <div class="project-header">
+                                    <h4>Green Terrace Complex</h4>
+                                    <div class="project-actions">
+                                        <button class="btn btn-sm btn-icon move-up-btn"><i class="fas fa-arrow-up"></i></button>
+                                        <button class="btn btn-sm btn-icon move-down-btn"><i class="fas fa-arrow-down"></i></button>
+                                        <button class="btn btn-sm btn-icon delete-btn"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <div class="form-group">
+                                        <label for="project1-title">Title</label>
+                                        <input type="text" id="project1-title" name="project1-title" value="Green Terrace Complex">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="project1-link">Link</label>
+                                        <input type="text" id="project1-link" name="project1-link" value="green-terrace.html">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="project1-image">Image</label>
+                                        <div class="image-upload-container">
+                                            <div class="image-preview">
+                                                <img src="../images/green-terrace.jpg" alt="Green Terrace Complex">
+                                            </div>
+                                            <div class="image-upload-controls">
+                                                <input type="file" id="project1-image" name="project1-image" accept="image/*">
+                                                <button class="btn btn-sm btn-secondary">Choose Image</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button class="btn btn-primary" id="saveProjectsBtn">Save Changes</button>
+                            <button class="btn btn-secondary" id="cancelProjectsBtn">Cancel</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Values Tab -->
+                    <div class="tab-pane" id="values">
+                        <div class="section-header">
+                            <h3>Values Section</h3>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="values-title">Title</label>
+                            <input type="text" id="values-title" name="values-title" value="Our Values">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="values-description">Description</label>
+                            <textarea id="values-description" name="values-description" rows="6">The continued success and development of FZ Construction is linked to the trust that clients, employees, collaborators, and third parties have given us. Our flexible, decentralized way of organizing enables each of our employees to exercise the autonomy required by their respective responsibilities, in accordance with the distinctive characteristics of each of them.
+
+Given this autonomy, it is essential that we act in accordance with our values and in accordance with our ethical principles and the law.</textarea>
+                        </div>
+                        
+                        <div class="section-subheader">
+                            <h4>Value Statistics</h4>
+                            <button class="btn btn-sm btn-primary" id="addStatBtn">
+                                <i class="fas fa-plus"></i> Add Statistic
+                            </button>
+                        </div>
+                        
+                        <div class="stats-container" id="statsContainer">
+                            <!-- Stat items will be loaded here dynamically -->
+                            <div class="stat-item">
+                                <div class="stat-header">
+                                    <h4>Collaboration</h4>
+                                    <div class="stat-actions">
+                                        <button class="btn btn-sm btn-icon move-up-btn"><i class="fas fa-arrow-up"></i></button>
+                                        <button class="btn btn-sm btn-icon move-down-btn"><i class="fas fa-arrow-down"></i></button>
+                                        <button class="btn btn-sm btn-icon delete-btn"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                <div class="stat-content">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="stat1-value">Value</label>
+                                            <input type="number" id="stat1-value" name="stat1-value" value="100">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="stat1-unit">Unit</label>
+                                            <input type="text" id="stat1-unit" name="stat1-unit" value="%">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="stat1-title">Title</label>
+                                        <input type="text" id="stat1-title" name="stat1-title" value="Collaboration">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button class="btn btn-primary" id="saveValuesBtn">Save Changes</button>
+                            <button class="btn btn-secondary" id="cancelValuesBtn">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/admin.js"></script>
+    <script src="js/content-home.js"></script>
+</body>
+</html>

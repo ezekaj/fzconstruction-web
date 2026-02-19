@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View project gallery of FZ Construction's completed and ongoing real estate projects in Tirana, Albania.">
+    <meta name="keywords" content="FZ Construction, project gallery, real estate projects, construction projects, Tirana, Albania">
+    <title>Project Gallery - FZ Construction</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <a href="tel:+35568206202" class="phone"><i class="fas fa-phone"></i> +355 68 2066 202</a>
+                    <a href="mailto:info@fz-construction.com" class="email"><i class="fas fa-envelope"></i> info@fz-construction.com</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/FzConstruction/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/fzconstruction/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="FZ Construction Logo" class="logo-img fade-in">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">HOME</a></li>
+                        <li><a href="about.html" class="nav-link">ABOUT US</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">FOR SALE <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="green-terrace.html">GREEN TERRACE COMPLEX</a></li>
+                                <li><a href="corner-building.html">CORNER BUILDING</a></li>
+                                <li><a href="forest-villas.html">FOREST VILLAS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="rent.html" class="nav-link">FOR RENT</a></li>
+                        <li><a href="search.html" class="nav-link">PROPERTY SEARCH</a></li>
+                        <li><a href="videos.html" class="nav-link">VIDEOS</a></li>
+                        <li class="dropdown">
+                            <a href="gallery.html" class="nav-link active">GALLERY <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="project-gallery.html" class="active">PROJECT GALLERY</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+                        <li><a href="#" class="nav-link agent-login">AGENT PORTAL</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in">Project Gallery</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <a href="gallery.html">Gallery</a> / <span>Project Gallery</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="project-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-project="green-terrace">Green Terrace Complex</button>
+                    <button class="tab-btn" data-project="forest-villas">Forest Villas</button>
+                    <button class="tab-btn" data-project="corner-building">Corner Building</button>
+                </div>
+            </div>
+
+            <div class="project-description active" id="green-terrace-description">
+                <div class="project-info">
+                    <h2>Green Terrace Complex</h2>
+                    <p>Modern residential complex with green spaces and premium amenities. The project features apartments of various sizes, from cozy one-bedroom units to spacious three-bedroom family homes.</p>
+                    <a href="green-terrace.html" class="btn btn-primary">View Project Details</a>
+                </div>
+            </div>
+
+            <div class="project-description" id="forest-villas-description">
+                <div class="project-info">
+                    <h2>Forest Villas</h2>
+                    <p>Exclusive villa complex surrounded by forest with premium finishes. Each villa offers spacious living areas, private gardens, and luxury amenities.</p>
+                    <a href="forest-villas.html" class="btn btn-primary">View Project Details</a>
+                </div>
+            </div>
+
+            <div class="project-description" id="corner-building-description">
+                <div class="project-info">
+                    <h2>Corner Building</h2>
+                    <p>Prime corner location commercial building with retail and office spaces. The modern design and central location make it an ideal investment opportunity.</p>
+                    <a href="corner-building.html" class="btn btn-primary">View Project Details</a>
+                </div>
+            </div>
+
+            <div class="gallery-grid" id="lightgallery">
+                <!-- Green Terrace Complex Gallery Items -->
+                <a href="images/gallery/green-terrace-1.jpg" class="gallery-item active" data-project="green-terrace" data-src="images/gallery/green-terrace-1.jpg">
+                    <img src="images/gallery/green-terrace-1-thumb.jpg" alt="Green Terrace Exterior" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Green Terrace Exterior</h3>
+                            <p>Residential Complex</p>
+                            <span class="view-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="images/gallery/green-terrace-2.jpg" class="gallery-item active" data-project="green-terrace" data-src="images/gallery/green-terrace-2.jpg">
+                    <img src="images/gallery/green-terrace-2-thumb.jpg" alt="Green Terrace Living Room" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Green Terrace Living Room</h3>
+                            <p>Interior Design</p>
+                            <span class="view-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="images/gallery/green-terrace-3.jpg" class="gallery-item active" data-project="green-terrace" data-src="images/gallery/green-terrace-3.jpg">
+                    <img src="images/gallery/green-terrace-3-thumb.jpg" alt="Green Terrace Kitchen" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Green Terrace Kitchen</h3>
+                            <p>Interior Design</p>
+                            <span class="view-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="images/gallery/green-terrace-4.jpg" class="gallery-item active" data-project="green-terrace" data-src="images/gallery/green-terrace-4.jpg">
+                    <img src="images/gallery/green-terrace-4-thumb.jpg" alt="Green Terrace Bedroom" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Green Terrace Bedroom</h3>
+                            <p>Interior Design</p>
+                            <span class="view-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="images/gallery/green-terrace-5.jpg" class="gallery-item active" data-project="green-terrace" data-src="images/gallery/green-terrace-5.jpg">
+                    <img src="images/gallery/green-terrace-5-thumb.jpg" alt="Green Terrace Bathroom" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Green Terrace Bathroom</h3>
+                            <p>Interior Design</p>
+                            <span class="view-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="images/gallery/green-terrace-6.jpg" class="gallery-item active" data-project="green-terrace" data-src="images/gallery/green-terrace-6.jpg">
+                    <img src="images/gallery/green-terrace-6-thumb.jpg" alt="Green Terrace Pool" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Green Terrace Pool</h3>
+                            <p>Amenities</p>
+                            <span class="view-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Forest Villas Gallery Items -->
+                <a href="images/gallery/forest-villas-1.jpg" class="gallery-item" data-project="forest-villas" data-src="images/gallery/forest-villas-1.jpg">
+                    <img src="images/gallery/forest-villas-1-thumb.jpg" alt="Forest Villas Exterior" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Forest Villas Exterior</h3>
+                            <p>Villa Complex</p>
+                            <span class="view-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="images/gallery/forest-villas-2.jpg" class="gallery-item" data-project="forest-villas" data-src="images/gallery/forest-villas-2.jpg">
+                    <img src="images/gallery/forest-villas-2-thumb.jpg" alt="Forest Villas Living Room" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Forest Villas Living Room</h3>
+                            <p>Interior Design</p>
+                            <span class="view-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="images/gallery/forest-villas-3.jpg" class="gallery-item" data-project="forest-villas" data-src="images/gallery/forest-villas-3.jpg">
+                    <img src="images/gallery/forest-villas-3-thumb.jpg" alt="Forest Villas Kitchen" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Forest Villas Kitchen</h3>
+                            <p>Interior Design</p>
+                            <span class="view-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="images/gallery/forest-villas-4.jpg" class="gallery-item" data-project="forest-villas" data-src="images/gallery/forest-villas-4.jpg">
+                    <img src="images/gallery/forest-villas-4-thumb.jpg" alt="Forest Villas Garden" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Forest Villas Garden</h3>
+                            <p>Exterior Design</p>
+                            <span class="view-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Corner Building Gallery Items -->
+                <a href="images/gallery/corner-building-1.jpg" class="gallery-item" data-project="corner-building" data-src="images/gallery/corner-building-1.jpg">
+                    <img src="images/gallery/corner-building-1-thumb.jpg" alt="Corner Building Exterior" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Corner Building Exterior</h3>
+                            <p>Commercial Building</p>
+                            <span class="view-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="images/gallery/corner-building-2.jpg" class="gallery-item" data-project="corner-building" data-src="images/gallery/corner-building-2.jpg">
+                    <img src="images/gallery/corner-building-2-thumb.jpg" alt="Corner Building Office Space" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Corner Building Office Space</h3>
+                            <p>Interior Design</p>
+                            <span class="view-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="images/gallery/corner-building-3.jpg" class="gallery-item" data-project="corner-building" data-src="images/gallery/corner-building-3.jpg">
+                    <img src="images/gallery/corner-building-3-thumb.jpg" alt="Corner Building Retail Space" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Corner Building Retail Space</h3>
+                            <p>Interior Design</p>
+                            <span class="view-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title">ABOUT US</h3>
+                    <p>
+                        "FZ Construction" company was established as a limited liability company in Tirana, and operates in the field of construction.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">PROJECTS</h3>
+                    <ul class="footer-links">
+                        <li><a href="green-terrace.html">Residential and Service Buildings</a></li>
+                        <li><a href="forest-villas.html">Villa Complexes</a></li>
+                        <li><a href="#">Infrastructure</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">LOCATION</h3>
+                    <p>
+                        Rr. Hamdi Sina, near Liqeni i Thate, Administrative Unit Farke, Tirana
+                    </p>
+                    <p>
+                        <a href="tel:+35568206202">+355 68 2066 202</a>
+                    </p>
+                    <p>
+                        <a href="mailto:info@fz-construction.com">info@fz-construction.com</a>
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">SOCIAL NETWORKS</h3>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/FzConstruction/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/fzconstruction/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 FZ Construction. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Agent Portal Modal -->
+    <div class="modal" id="agentPortal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Agent Portal</h2>
+            <form id="agentLoginForm">
+                <div class="form-group">
+                    <label for="agentEmail">Email</label>
+                    <input type="email" id="agentEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="agentPassword">Password</label>
+                    <input type="password" id="agentPassword" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/agent-portal.js"></script>
+    <script src="js/cms-loader.js"></script>
+    <!-- Lightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script>
+    <script src="js/project-gallery.js"></script>
+</body>
+</html>

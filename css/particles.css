@@ -1,0 +1,241 @@
+/* Particle Animation Styles for FZ Construction */
+
+/* Particle Container */
+.particle-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Particle Element */
+.particle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: floatParticle 20s linear infinite;
+}
+
+/* Particle Colors */
+.particle-bg.primary .particle {
+    background-color: rgba(231, 76, 60, 0.2);
+}
+
+.particle-bg.secondary .particle {
+    background-color: rgba(52, 152, 219, 0.2);
+}
+
+.particle-bg.light .particle {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.particle-bg.dark .particle {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Particle Animation */
+@keyframes floatParticle {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    25% {
+        transform: translateY(-30px) translateX(30px);
+    }
+    50% {
+        transform: translateY(-60px) translateX(0);
+    }
+    75% {
+        transform: translateY(-30px) translateX(-30px);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+/* Ripple Effect */
+.btn-ripple {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    animation: ripple 0.6s linear;
+    transform: scale(0);
+    pointer-events: none;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Animated Gradient Button */
+.btn-gradient {
+    background-size: 200% 200%;
+    background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--primary-color));
+    transition: all 0.5s ease;
+}
+
+.btn-gradient:hover {
+    background-position: 100% 0;
+}
+
+/* 3D Button */
+.btn-3d {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-3d::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: -6px;
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: translateZ(-1px);
+    border-radius: 4px;
+}
+
+.btn-3d:hover {
+    transform: translateY(-3px) translateZ(0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-3d:active {
+    transform: translateY(0) translateZ(0);
+}
+
+/* Glowing Button */
+.btn-glow {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-glow::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: glowingBorder 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 6px;
+}
+
+.btn-glow:hover::before {
+    opacity: 1;
+}
+
+.btn-glow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--primary-color);
+    z-index: -2;
+    border-radius: 4px;
+}
+
+@keyframes glowingBorder {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* Magnetic Button */
+.btn-magnetic {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Shiny Button */
+.btn-shiny {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-shiny::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+    animation: shinyAnimation 3s infinite;
+}
+
+@keyframes shinyAnimation {
+    0% {
+        left: -100%;
+    }
+    20%, 100% {
+        left: 100%;
+    }
+}
+
+/* Morphing Button */
+.btn-morph {
+    transition: border-radius 0.3s ease, transform 0.3s ease;
+}
+
+.btn-morph:hover {
+    border-radius: 25px;
+    transform: scale(1.05);
+}
+
+/* Particle Button */
+.btn-particle {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-particle span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-particle:hover::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    transform: translate(-50%, -50%) scale(0);
+    animation: particleExpand 0.6s ease-out forwards;
+}
+
+@keyframes particleExpand {
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}

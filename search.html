@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Search - FZ Construction</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/search.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <a href="tel:+35568206202" class="phone"><i class="fas fa-phone"></i> +355 68 2066 202</a>
+                    <a href="mailto:info@fz-construction.com" class="email"><i class="fas fa-envelope"></i> info@fz-construction.com</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/FzConstruction/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/fzconstruction/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="FZ Construction Logo" class="logo-img fade-in">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">HOME</a></li>
+                        <li><a href="about.html" class="nav-link">ABOUT US</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">FOR SALE <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="green-terrace.html">GREEN TERRACE COMPLEX</a></li>
+                                <li><a href="corner-building.html">CORNER BUILDING</a></li>
+                                <li><a href="forest-villas.html">FOREST VILLAS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="rent.html" class="nav-link">FOR RENT</a></li>
+                        <li><a href="videos.html" class="nav-link">VIDEOS</a></li>
+                        <li class="dropdown">
+                            <a href="gallery.html" class="nav-link">GALLERY <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="project-gallery.html">PROJECT GALLERY</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+                        <li><a href="#" class="nav-link agent-login">AGENT PORTAL</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in">Property Search</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <span>Property Search</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="container">
+            <div class="search-filters">
+                <h2 class="section-subtitle">FIND YOUR DREAM PROPERTY</h2>
+                <form id="propertySearchForm" class="search-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="propertyType">Property Type</label>
+                            <select id="propertyType" name="propertyType">
+                                <option value="">All Types</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="villa">Villa</option>
+                                <option value="office">Office Space</option>
+                                <option value="retail">Retail Space</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <select id="location" name="location">
+                                <option value="">All Locations</option>
+                                <option value="tirana">Tirana</option>
+                                <option value="durres">Durres</option>
+                                <option value="vlore">Vlore</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="minPrice">Min Price (€)</label>
+                            <input type="number" id="minPrice" name="minPrice" placeholder="Min Price">
+                        </div>
+                        <div class="form-group">
+                            <label for="maxPrice">Max Price (€)</label>
+                            <input type="number" id="maxPrice" name="maxPrice" placeholder="Max Price">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bedrooms">Bedrooms</label>
+                            <select id="bedrooms" name="bedrooms">
+                                <option value="">Any</option>
+                                <option value="1">1+</option>
+                                <option value="2">2+</option>
+                                <option value="3">3+</option>
+                                <option value="4">4+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="bathrooms">Bathrooms</label>
+                            <select id="bathrooms" name="bathrooms">
+                                <option value="">Any</option>
+                                <option value="1">1+</option>
+                                <option value="2">2+</option>
+                                <option value="3">3+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="minArea">Min Area (m²)</label>
+                            <input type="number" id="minArea" name="minArea" placeholder="Min Area">
+                        </div>
+                        <div class="form-group">
+                            <label for="maxArea">Max Area (m²)</label>
+                            <input type="number" id="maxArea" name="maxArea" placeholder="Max Area">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Features</label>
+                        <div class="features-checkboxes">
+                            <div class="feature-checkbox">
+                                <input type="checkbox" id="feature-parking" name="features" value="parking">
+                                <label for="feature-parking">Parking</label>
+                            </div>
+                            <div class="feature-checkbox">
+                                <input type="checkbox" id="feature-balcony" name="features" value="balcony">
+                                <label for="feature-balcony">Balcony</label>
+                            </div>
+                            <div class="feature-checkbox">
+                                <input type="checkbox" id="feature-pool" name="features" value="pool">
+                                <label for="feature-pool">Swimming Pool</label>
+                            </div>
+                            <div class="feature-checkbox">
+                                <input type="checkbox" id="feature-gym" name="features" value="gym">
+                                <label for="feature-gym">Gym</label>
+                            </div>
+                            <div class="feature-checkbox">
+                                <input type="checkbox" id="feature-security" name="features" value="security">
+                                <label for="feature-security">Security</label>
+                            </div>
+                            <div class="feature-checkbox">
+                                <input type="checkbox" id="feature-garden" name="features" value="garden">
+                                <label for="feature-garden">Garden</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Search Properties</button>
+                        <button type="reset" class="btn btn-secondary">Reset Filters</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="search-results">
+                <div class="results-header">
+                    <h3>Search Results <span id="resultCount">(3)</span></h3>
+                    <div class="results-sorting">
+                        <label for="sortBy">Sort by:</label>
+                        <select id="sortBy" name="sortBy">
+                            <option value="price-asc">Price (Low to High)</option>
+                            <option value="price-desc">Price (High to Low)</option>
+                            <option value="date-desc">Newest First</option>
+                            <option value="area-desc">Area (Largest First)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="results-grid" id="searchResults">
+                    <!-- Property items will be loaded dynamically -->
+                    <div class="property-card fade-in" data-type="apartment" data-location="tirana" data-price="120000" data-bedrooms="2" data-bathrooms="1" data-area="85" data-features="parking,balcony">
+                        <div class="property-image">
+                            <img src="images/properties/apartment1.jpg" alt="Green Terrace Apartment">
+                            <div class="property-badge">For Sale</div>
+                            <div class="property-price">€120,000</div>
+                        </div>
+                        <div class="property-details">
+                            <h3 class="property-title">Green Terrace Apartment</h3>
+                            <p class="property-location"><i class="fas fa-map-marker-alt"></i> Tirana, Albania</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed"></i> 2 Beds</span>
+                                <span><i class="fas fa-bath"></i> 1 Bath</span>
+                                <span><i class="fas fa-ruler-combined"></i> 85 m²</span>
+                            </div>
+                            <p class="property-description">
+                                Modern apartment in the Green Terrace Complex with a balcony and parking space.
+                            </p>
+                            <a href="green-terrace.html" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="property-card fade-in" data-type="villa" data-location="tirana" data-price="350000" data-bedrooms="4" data-bathrooms="3" data-area="250" data-features="parking,balcony,pool,garden,security">
+                        <div class="property-image">
+                            <img src="images/properties/villa1.jpg" alt="Forest Villa">
+                            <div class="property-badge">For Sale</div>
+                            <div class="property-price">€350,000</div>
+                        </div>
+                        <div class="property-details">
+                            <h3 class="property-title">Forest Villa</h3>
+                            <p class="property-location"><i class="fas fa-map-marker-alt"></i> Tirana, Albania</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed"></i> 4 Beds</span>
+                                <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 250 m²</span>
+                            </div>
+                            <p class="property-description">
+                                Luxury villa in the Forest Villas complex with swimming pool, garden, and security.
+                            </p>
+                            <a href="forest-villas.html" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="property-card fade-in" data-type="office" data-location="tirana" data-price="200000" data-bedrooms="0" data-bathrooms="1" data-area="150" data-features="parking,security">
+                        <div class="property-image">
+                            <img src="images/properties/office1.jpg" alt="Corner Building Office">
+                            <div class="property-badge">For Sale</div>
+                            <div class="property-price">€200,000</div>
+                        </div>
+                        <div class="property-details">
+                            <h3 class="property-title">Corner Building Office</h3>
+                            <p class="property-location"><i class="fas fa-map-marker-alt"></i> Tirana, Albania</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-ruler-combined"></i> 150 m²</span>
+                                <span><i class="fas fa-car"></i> Parking</span>
+                                <span><i class="fas fa-shield-alt"></i> Security</span>
+                            </div>
+                            <p class="property-description">
+                                Modern office space in the Corner Building with parking and security.
+                            </p>
+                            <a href="corner-building.html" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-pagination">
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title">ABOUT US</h3>
+                    <p>
+                        "FZ Construction" company was established as a limited liability company in Tirana, and operates in the field of construction.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">PROJECTS</h3>
+                    <ul class="footer-links">
+                        <li><a href="green-terrace.html">Residential and Service Buildings</a></li>
+                        <li><a href="forest-villas.html">Villa Complexes</a></li>
+                        <li><a href="#">Infrastructure</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">LOCATION</h3>
+                    <p>
+                        Rr. Hamdi Sina, near Liqeni i Thate, Administrative Unit Farke, Tirana
+                    </p>
+                    <p>
+                        <a href="tel:+35568206202">+355 68 2066 202</a>
+                    </p>
+                    <p>
+                        <a href="mailto:info@fz-construction.com">info@fz-construction.com</a>
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">SOCIAL NETWORKS</h3>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/FzConstruction/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/fzconstruction/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 FZ Construction. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Agent Portal Modal -->
+    <div class="modal" id="agentPortal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Agent Portal</h2>
+            <form id="agentLoginForm">
+                <div class="form-group">
+                    <label for="agentEmail">Email</label>
+                    <input type="email" id="agentEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="agentPassword">Password</label>
+                    <input type="password" id="agentPassword" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/agent-portal.js"></script>
+    <script src="js/cms-loader.js"></script>
+    <script src="js/property-search.js"></script>
+</body>
+</html>
