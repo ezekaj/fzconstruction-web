@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url(../fonts/jetbrains-mono-variable.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Syncopate';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/syncopate-400.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Syncopate';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/syncopate-700.woff2) format('woff2');
+}
+
 /* Base Styles */
 :root {
     --primary-color: #2c3e50;
